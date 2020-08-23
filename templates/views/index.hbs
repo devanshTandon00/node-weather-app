@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel='icon' href='img/weather.png'>
+        <link rel = 'stylesheet' href = './css/styles.css'>
+        {{!-- <a href='https://www.freepik.com/vectors/background'>Background vector created by 3ab2ou - www.freepik.com</a> --}}
+    </head>
+    <body>
+        <div class = 'content'>
+             {{>header}} 
+             <form id = 'weatherForm'> 
+                 <input id = "userInput" placeholder="Location..." autofocus="autofocus">
+                 <button id = "weatherButton">Search</button>
+             </form>
+             <p id = 'location'></p>
+             <p id = 'forecast'></p>
+        </div>
+        {{>footer}}
+
+        <script src = '/js/app.js'></script>
+    </body>
+      
+</html>
