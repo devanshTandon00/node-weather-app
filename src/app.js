@@ -1,9 +1,9 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
-// const request = require('postman-request')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+const port = process.env.PORT || 3000
 
 const app = express()   
 
@@ -86,6 +86,6 @@ app.get('*', (req,res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is running ')
+app.listen(port, () => {
+    console.log('Server is running at ' + port)
 })
