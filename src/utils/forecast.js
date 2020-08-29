@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
             callback(data.body.error.info, undefined)
         }
         else{   
-            callback(undefined, `Weather is ${data.body.current.weather_descriptions}. Temparature is currently ${data.body.current.temperature} degrees, however it feels like ${data.body.current.feelslike}. Humidity is ${data.body.current.humidity} and cloudcover is ${data.body.current.cloudcover} in ${data.body.location.name} at ${data.body.current.observation_time}.`) 
+            callback(undefined, `Weather is ${data.body.current.weather_descriptions}. Temparature is currently ${data.body.current.temperature} degrees, however it feels like ${data.body.current.feelslike}. Humidity is ${data.body.current.humidity}% and cloudcover is ${data.body.current.cloudcover} in ${data.body.location.name} at ${data.body.current.observation_time}.`) 
         }
     })
 }
